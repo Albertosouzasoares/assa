@@ -40,7 +40,7 @@ header {
 */
 
 /*Menu*/
-.menu {
+#menu {
     display: flex;
 
     li {
@@ -64,20 +64,8 @@ header {
     }
 }
 
-/*Mude Depois*/
-#btn_mobile {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    outline: none;
-}
-
-.menu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
-    color: black;
-}
+/*Menu Mobile*/
+@import '../components/_menu-mobile.scss';
 
 /*Pesquisa*/
 @import '../components/_search.scss';

@@ -27,10 +27,7 @@
 }
 
 /*Caixa de Pesquisa*/
-#search_box {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out;
+#search-box {
     position: absolute;
     width: 100%;
     top: 70px;
@@ -38,9 +35,9 @@
     background: $corBranco;
     transition: 0.6s;
     z-index: 1000;
-    height: 60vh;
-    visibility: visible;
-    overflow-y: auto;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
     box-shadow: 0px 4px 12px $sombra;
 }
 
@@ -84,4 +81,10 @@
             }
         }
     }
+}
+
+.active-search#search-box {
+    height: 60vh;
+    visibility: visible;
+    overflow-y: auto;
 }
