@@ -141,7 +141,7 @@ header {
     transition: 0.6s;
   }
   .active-menu #menu {
-    height: 200px;
+    height: 100vh;
     visibility: visible;
     overflow-y: auto;
   }
@@ -228,7 +228,7 @@ header {
 }
 
 .active-search#search-box {
-  height: 60vh;
+  height: 100vh;
   visibility: visible;
   overflow-y: auto;
 }
