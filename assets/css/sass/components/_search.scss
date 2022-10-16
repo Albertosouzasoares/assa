@@ -1,0 +1,87 @@
+/*Botão da Pesquisa*/
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    margin-left: 24px;
+    border-radius: 12px;
+    transition: 0.4s;
+    outline: none;
+
+    &:hover {
+        background-color: $corVerde;
+    }
+
+    /*Icone Pesquisa*/
+    ion-icon {
+        font-size: 22px;
+        color: $corVerde;
+        transition: 0.4s;
+
+        &:hover {
+            color: $corPrimaria;
+        }
+    }
+}
+
+/*Caixa de Pesquisa*/
+#search_box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: $corBranco;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 60vh;
+    visibility: visible;
+    overflow-y: auto;
+    box-shadow: 0px 4px 12px $sombra;
+}
+
+.search-txt {
+    background-color: $corBranco;
+    border: 2px solid $corVerde;
+    color: $corVerde;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: $fontOpenSans;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 4px 12px;
+    width: 100%;
+    max-width: 1160px;
+    margin: 10px auto;
+    position: sticky;
+    top: 10px;
+    display: block;
+}
+
+#ul {
+    max-width: 1200px;
+    padding: 5px 20px 0px 20px;
+    margin: auto;
+
+    h4 {
+        border-bottom: 2px solid $corVerde;
+
+        a {
+            padding: 12px 8px;
+            font-family: $fontUbuntu;
+            font-size: 16px;
+            display: block;
+            color: $corVerde;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: $corVerde;
+                color: $corBranco
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+/*Cabeçalho*/
+header {
+    background-color: $corPrimaria;
+    box-shadow: 0px 4px 12px $sombra;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+#header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*Passe Aqui Depois*/
+#header > a {
+    display: flex;
+}
+
+/*Logo*/
+.logo {
+    max-width: 400px;
+    width: 100%;
+}
+
+/*Navegação*/
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+/*Botão da Navegação do Menu
+#btn-mobile {
+    display: none;
+}
+*/
+
+/*Menu*/
+.menu {
+    display: flex;
+
+    li {
+        margin-left: 12px;
+
+        a {
+            font-family: $fontOpenSans;
+            font-size: 18px;
+            color: $corVerde;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            padding: 4px 12px;
+            border-radius: 15px;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: $corVerde;
+                color: $corPrimaria;
+            }
+        }
+    }
+}
+
+/*Mude Depois*/
+#btn_mobile {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    outline: none;
+}
+
+.menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    color: black;
+}
+
+/*Pesquisa*/
+@import '../components/_search.scss';

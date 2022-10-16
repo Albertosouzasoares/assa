@@ -1,0 +1,416 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,800;1,500;1,800&family=Ubuntu:ital,wght@0,500;0,700;1,500;1,700&display=swap");
+/*Seletor Universal*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F0F0F0;
+}
+
+/*Listas Não Ordenadas e Ordenadas*/
+ul, ol {
+  list-style: none;
+}
+
+/*Link*/
+a {
+  text-decoration: none;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*Botão*/
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*Cabeçalho*/
+header {
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+#header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*Passe Aqui Depois*/
+#header > a {
+  display: flex;
+}
+
+/*Logo*/
+.logo {
+  max-width: 400px;
+  width: 100%;
+}
+
+/*Navegação*/
+#nav {
+  display: flex;
+  align-items: center;
+}
+
+/*Botão da Navegação do Menu
+#btn-mobile {
+    display: none;
+}
+*/
+/*Menu*/
+.menu {
+  display: flex;
+}
+.menu li {
+  margin-left: 12px;
+}
+.menu li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #0A6666;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  padding: 4px 12px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+.menu li a:hover {
+  background-color: #0A6666;
+  color: #FFFFFF;
+}
+
+/*Mude Depois*/
+#btn_mobile {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  outline: none;
+}
+
+.menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  color: black;
+}
+
+/*Pesquisa*/
+/*Botão da Pesquisa*/
+#search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  margin-left: 24px;
+  border-radius: 12px;
+  transition: 0.4s;
+  outline: none;
+  /*Icone Pesquisa*/
+}
+#search:hover {
+  background-color: #0A6666;
+}
+#search ion-icon {
+  font-size: 22px;
+  color: #0A6666;
+  transition: 0.4s;
+}
+#search ion-icon:hover {
+  color: #FFFFFF;
+}
+
+/*Caixa de Pesquisa*/
+#search_box {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  right: 0px;
+  background: #F0F0F0;
+  transition: 0.6s;
+  z-index: 1000;
+  height: 60vh;
+  visibility: visible;
+  overflow-y: auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.search-txt {
+  background-color: #F0F0F0;
+  border: 2px solid #0A6666;
+  color: #0A6666;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  padding: 4px 12px;
+  width: 100%;
+  max-width: 1160px;
+  margin: 10px auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  display: block;
+}
+
+#ul {
+  max-width: 1200px;
+  padding: 5px 20px 0px 20px;
+  margin: auto;
+}
+#ul h4 {
+  border-bottom: 2px solid #0A6666;
+}
+#ul h4 a {
+  padding: 12px 8px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  display: block;
+  color: #0A6666;
+  transition: 0.4s;
+}
+#ul h4 a:hover {
+  background-color: #0A6666;
+  color: #F0F0F0;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+#recent {
+  display: flex;
+  padding: 15px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+#recent section {
+  padding-left: 15px;
+  position: relative;
+}
+#recent section h2 {
+  margin-bottom: 15px;
+}
+#recent section h2 a {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 28px;
+  color: #4A4A4A;
+  transition: 0.4s;
+}
+#recent section h2 a:hover {
+  color: #0A6666;
+}
+#recent section p {
+  font-family: "Open Sans", sans-serif;
+  color: #2C2C2C;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#recent section time {
+  font-family: "Open Sans", sans-serif;
+  color: #4A4A4A;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#post-image {
+  max-width: 560px;
+  width: 100%;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 6px;
+}
+#post-image img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s linear;
+}
+#post-image img:hover {
+  transform: scale(1.1);
+}
+
+a.button {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #0A6666;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 14px;
+  transition: 0.4s;
+}
+.button:hover {
+  background-color: #0A6666;
+  color: #FFFFFF;
+}
+
+#posts {
+  padding: 15px;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+#posts section {
+  display: flex;
+  margin-bottom: 20px;
+}
+#posts a {
+  position: relative;
+  max-width: 575px;
+  width: 100%;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 6px;
+}
+#posts a img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s linear;
+}
+#posts a img:hover {
+  transform: scale(1.1);
+}
+#posts h3 {
+  color: #FFFFFF;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  text-align: justify;
+  letter-spacing: 0.6px;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+}
+#posts a:first-child {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #FFFFFF;
+  box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.2);
+  padding: 10px 0px 20px 0px;
+}
+footer p {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #2C2C2C;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0px auto 10px auto;
+}
+
+#footer-AstroFantastico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-AstroFantastico .logo {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/*Passe Aqui Depois*/
+#footer-AstroFantastico a {
+  display: inline-flex;
+}
+
+#social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 140px;
+  margin: 4px auto;
+}
+#social ion-icon {
+  font-size: 26px;
+  padding: 5px;
+  color: #0A6666;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+#social ion-icon:hover {
+  background-color: #0A6666;
+  color: #FFFFFF;
+}
+
+#footer-link .button {
+  display: block;
+  border-radius: 6px;
+  padding: 4px 20px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  /*Passe Aqui Tambem*/
+  margin: 0px;
+}
+#footer-link .button:last-child {
+  margin-top: 20px;
+}
+
+#hamburger {
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 7px;
+}
+#hamburger::before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: black;
+  display: block;
+  margin-top: 13px;
+}/*# sourceMappingURL=style.css.map */
