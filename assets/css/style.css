@@ -50,6 +50,7 @@ header {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
+  padding: 0px 20px 0px 0px;
 }
 
 /*Passe Aqui Depois*/
@@ -103,13 +104,14 @@ header {
   width: 30px;
   height: 30px;
   position: relative;
+  margin-left: 15px;
 }
 
 #hamburger {
   width: 30px;
   height: 3px;
   border-radius: 3px;
-  background-color: black;
+  background-color: #0A6666;
   display: block;
   position: absolute;
   top: 7px;
@@ -119,7 +121,7 @@ header {
   width: 30px;
   height: 3px;
   border-radius: 3px;
-  background-color: black;
+  background-color: #0A6666;
   display: block;
   margin-top: 13px;
 }
@@ -127,6 +129,7 @@ header {
 @media (max-width: 1000px) {
   #btn-mobile {
     display: block;
+    order: 1;
   }
   #menu {
     display: block;
@@ -134,7 +137,7 @@ header {
     top: 70px;
     width: 100%;
     left: 0px;
-    background-color: aqua;
+    background-color: #F0F0F0;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
@@ -144,6 +147,29 @@ header {
     height: 100vh;
     visibility: visible;
     overflow-y: auto;
+  }
+  .active-menu #hamburger {
+    top: 14px;
+    transform: rotate(45deg);
+    transition: 0.4s;
+  }
+  .active-menu #hamburger::before {
+    transition: 0.4s;
+    transform: rotate(-90deg);
+    top: -13px;
+    position: absolute;
+  }
+  #menu {
+    padding: 0px 20px;
+  }
+  #menu li {
+    border-bottom: 2px solid #0A6666;
+    margin: 0px;
+  }
+  #menu li a {
+    padding: 12px;
+    display: block;
+    border-radius: 0px;
   }
 }
 /*Pesquisa*/
@@ -155,21 +181,24 @@ header {
   height: 32px;
   width: 32px;
   margin-left: 24px;
-  border-radius: 12px;
-  transition: 0.4s;
-  outline: none;
   /*Icone Pesquisa*/
 }
-#search:hover {
-  background-color: #0A6666;
-}
 #search ion-icon {
-  font-size: 22px;
+  font-size: 24px;
   color: #0A6666;
   transition: 0.4s;
 }
-#search ion-icon:hover {
-  color: #FFFFFF;
+
+#icon-close {
+  display: none;
+}
+
+.active-search #icon-search {
+  display: none;
+}
+
+.active-search #icon-close {
+  display: block;
 }
 
 /*Caixa de Pesquisa*/
@@ -185,6 +214,7 @@ header {
   visibility: hidden;
   overflow-y: hidden;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 20px;
 }
 
 .search-txt {
@@ -233,6 +263,11 @@ header {
   overflow-y: auto;
 }
 
+@media (max-width: 1000px) {
+  #search {
+    order: 0;
+  }
+}
 main {
   max-width: 1200px;
   margin: auto;
@@ -326,7 +361,7 @@ a.button {
 }
 #posts section {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 #posts a {
   position: relative;
@@ -335,6 +370,9 @@ a.button {
   display: inline-flex;
   overflow: hidden;
   border-radius: 6px;
+}
+#posts a:first-child {
+  margin-right: 20px;
 }
 #posts a img {
   width: 100%;
@@ -357,10 +395,30 @@ a.button {
   width: 100%;
   padding: 20px 10px 10px 10px;
 }
-#posts a:first-child {
-  margin-right: 20px;
-}
 
+@media (max-width: 800px) {
+  #recent {
+    display: block;
+  }
+  #recent section {
+    padding: 15px 0px 0px 0px;
+  }
+  #post-image {
+    max-width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  #posts section {
+    display: block;
+  }
+  #posts a {
+    max-width: 100%;
+  }
+  #posts a:first-child {
+    margin: 0px 0px 15px 0px;
+  }
+}
 footer {
   background-color: #FFFFFF;
   box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.2);
