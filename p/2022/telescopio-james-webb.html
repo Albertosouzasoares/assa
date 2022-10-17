@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="../../arquivos/css/style.css">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="../../arquivos/icones/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../arquivos/icones/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../arquivos/icones/favicon-16x16.png">
+  <title>JAMES WEBB: O telescópio mais poderoso</title>
+</head>
+<body>
+  
+  <!--Header-->
+  <header>
+    <div class="espaco">
+      
+      <!--Logo-->
+      <a href="https://astrofantastico.com.br">
+        <img class="logo" src="../../arquivos/icones/logo.png" alt="Astro Fantástico"/>
+      </a>
+      
+      <!--Menu-->
+      <nav id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span id="hamburger"></span>
+        </button>
+        
+        <ul id="menu">
+          <li><a class="divisao" href="https://astrofantastico.com.br">Inicio</a></li>
+          <li><a href="../../eventos-astronomicos">Eventos Astronômicos</a></li>
+          <li><a href="../../sobre">Sobre</a></li>
+          <li><a href="../../mais"><i class="fas fa-search"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!--Main-->
+  <main>
+    <article>
+      <h1>JAMES WEBB: O telescópio mais poderoso</h1>
+      <p>
+        A tecnologia dos telescópios vem melhorando a cada dia que passa, e a NASA junto com a Agência Espacial Europeia (ESA) e Agência Espacial Canadense (CSA), teve a finalidade de construir o <strong>telescópio mais poderoso</strong>, o Telescópio espacial James Webb (JWST).
+      </p>
+      <img src="midias/img-telescopio-espacial-james-webb.jpg" alt="Telescopio Espacial James Webb, o telescopiomais poderoso"/>
+      <h2>Finalidade do James Webb</h2>
+      <p>
+        A finalidade de colocar no espaço um observatório é para captar a <strong>radiação infravermelha</strong>. O James Webb foi lançado no dia 25 de dezembro de 2021 a bordo do foguete ariane 5, o lançamento foi feito no centro espacial de kourou na Guiana Francesa.
+      </p>
+      <p>
+        Ao contrário do telescópio Hubble que está a cerca de 500 km acima da superfície do nosso planeta, o James Webb ficará 1,5 milhões de quilômetros da superfície do planeta Terra em uma região do espaço conhecida como ponto de <strong>Lagrange L2</strong> no sistema formado pela Terra e o Sol.
+      </p>
+      <h2>Obijetivo do James Webb</h2>
+      <p>
+        O telescópio espacial James Webb tem o foco primário na astronomia infravermelha. A intenção dese telescópio é pesquisar a luz das primeiras estrelas e galáxias que se formaram no universo após o <a href="https://pt.m.wikipedia.org/wiki/Big_Bang" target="_blank">Big Bang  &#128279;</a>, estudar a formação e a evolução das galáxias, entender a formação de estrelas e sistemas planetários e estudar os sistemas planetários e as origens da vida.
+      </p>
+
+      <!--Video-->
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FAlloDILiBg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br/>
+    </article>
+    
+    <!--Compartilhar-->
+    <div class="compartilhar">
+      <a href="javascript:void(0)" onclick="share()"><img width="60" height="60" src="../../arquivos/icones/compartilhar.png" alt="compartilhar">
+      </a>
+    </div>
+  </main>
+  
+  <!--Anterior e Próximo-->
+  <div class="a-p">
+    <a href="sobre-buraco-negro">&lt; ANTERIOR</a>
+    <a href="teoria-relatividade-geral-restrita">PRÓXIMO &#62;</a>
+  </div>
+  
+  <!--Footer-->
+  <footer>
+    <div class="icones">
+      <a href="https://instagram.com/astrofantastico_" target="_blank"><ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="https://www.youtube.com/channel/UCs9z66b9KHZlKdhgitay8gA" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+    </div>
+    <p>&copy; 2022 Astro Fantastico | <a href="../../politica-de-privacidade">Privacidade</a></p>
+  </footer>
+  
+  <!--Script-->
+  <script src="../../arquivos/js/script.js"></script>
+  <script>
+    function share(){
+    	if (navigator.share !== undefined) {
+    		navigator.share({
+    			title: 'JAMES WEBB: O telescópio mais poderoso',
+    			text: 'Os telescópios vem melhorando a cada dia que passa, e as Agências Espacial teve a finalidade de construir telescópio mais poderoso, o Telescópio Espacial James Webb.',
+    			url: 'https://astrofantastico.com.br/p/2022/telescopio-james-webb',
+    		})
+    		.then(() => console.log('Successful share'))
+    		.catch((error) => console.log('Error sharing', error));
+    	}
+    }
+  </script>
+  <script  type="module"  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script  nomodule  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
