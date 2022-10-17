@@ -12,6 +12,8 @@ btnMobile.addEventListener('click', toggleMenu);
 const btnSearch = document.getElementById('search');
 
 function toggleSearch() {
+    const iconSearch = document.getElementById('search');
+    iconSearch.classList.toggle('active-search');
     const search = document.getElementById('search-box');
     search.classList.toggle('active-search');
 }
