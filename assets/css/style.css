@@ -50,7 +50,7 @@ header {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  padding: 0px 20px 0px 0px;
+  padding: 0px 20px;
 }
 
 /*Passe Aqui Depois*/
@@ -62,6 +62,7 @@ header {
 .logo {
   max-width: 400px;
   width: 100%;
+  margin-left: -15px;
 }
 
 /*Navegação*/
@@ -314,6 +315,10 @@ main {
   margin-bottom: 10px;
   display: block;
 }
+#recent section a.button {
+  display: inline-block;
+  margin-top: 30px;
+}
 
 #post-image {
   max-width: 560px;
@@ -321,6 +326,7 @@ main {
   display: inline-flex;
   overflow: hidden;
   border-radius: 6px;
+  position: relative;
 }
 #post-image img {
   width: 100%;
@@ -331,9 +337,21 @@ main {
   transform: scale(1.1);
 }
 
-a.button {
-  display: inline-block;
-  margin-top: 30px;
+/*Mude Aqui*/
+.category {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  position: absolute;
+  letter-spacing: 0.6px;
+  top: 0px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 15px 0px 0px 15px;
+  z-index: 100;
+  text-transform: uppercase;
+  background-color: #0A6666;
 }
 
 .button {
@@ -382,18 +400,29 @@ a.button {
 #posts a img:hover {
   transform: scale(1.1);
 }
+#posts div {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
+}
+#posts time {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px 10px 0px 10px;
+  display: block;
+}
 #posts h3 {
   color: #FFFFFF;
   font-family: "Ubuntu", sans-serif;
   font-size: 22px;
-  background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
   text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-  position: absolute;
   text-align: justify;
   letter-spacing: 0.6px;
-  bottom: 0px;
-  width: 100%;
-  padding: 20px 10px 10px 10px;
+  padding: 10px;
 }
 
 @media (max-width: 800px) {
@@ -402,6 +431,12 @@ a.button {
   }
   #recent section {
     padding: 15px 0px 0px 0px;
+  }
+  #recent section a.button {
+    margin-top: 10px;
+  }
+  #recent hr {
+    display: none;
   }
   #post-image {
     max-width: 100%;
@@ -418,15 +453,37 @@ a.button {
   #posts a:first-child {
     margin: 0px 0px 15px 0px;
   }
+  #posts div {
+    padding: 15px;
+  }
+  #posts .category {
+    margin: 20px 0px 0px 20px;
+  }
+}
+@media (max-width: 500px) {
+  #recent section p {
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    line-height: 20px;
+  }
+  #recent section time {
+    font-size: 12px;
+  }
+  #recent section h2 a {
+    font-size: 22px;
+  }
+  #recent section .button {
+    font-size: 14px;
+  }
 }
 footer {
   background-color: #FFFFFF;
   box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.2);
-  padding: 10px 0px 20px 0px;
+  padding: 10px 20px;
 }
 footer p {
   border-top: 2px solid rgba(0, 0, 0, 0.2);
-  padding-top: 20px;
+  padding: 20px 0px 10px 0px;
   text-align: center;
   max-width: 1200px;
   margin: auto;
@@ -450,9 +507,10 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: -20px;
 }
 #footer-AstroFantastico .logo {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  margin-left: 0px;
 }
 
 /*Passe Aqui Depois*/
@@ -465,7 +523,9 @@ footer p {
   justify-content: space-between;
   align-items: center;
   max-width: 140px;
-  margin: 4px auto;
+  margin: auto;
+  padding-top: 10px;
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
 }
 #social ion-icon {
   font-size: 26px;
@@ -490,4 +550,31 @@ footer p {
 }
 #footer-link .button:last-child {
   margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  footer p {
+    font-size: 14px;
+  }
+  #footer {
+    display: block;
+    margin-bottom: 20px;
+  }
+  #footer-AstroFantastico {
+    margin: 0px;
+  }
+  #social {
+    padding: 0px;
+    border-top: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+  }
+  #footer-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  #footer-link .button:last-child {
+    margin: 0px 0px 0px 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
