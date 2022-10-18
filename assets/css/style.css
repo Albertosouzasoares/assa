@@ -347,7 +347,7 @@ main {
   letter-spacing: 0.6px;
   top: 0px;
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 2px;
   margin: 15px 0px 0px 15px;
   z-index: 100;
   text-transform: uppercase;
@@ -475,6 +475,21 @@ main {
   #recent section .button {
     font-size: 14px;
   }
+  #posts .category, .category {
+    font-size: 10px;
+    padding: 4px 10px;
+    margin: 10px 0px 0px 10px;
+  }
+  #posts div {
+    padding: 10px;
+  }
+  #posts h3 {
+    font-size: 18px;
+    padding: 10px 0px 0px 0px;
+  }
+  #posts time {
+    padding: 0px;
+  }
 }
 footer {
   background-color: #FFFFFF;
@@ -507,7 +522,6 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -20px;
 }
 #footer-AstroFantastico .logo {
   margin-left: 0px;
