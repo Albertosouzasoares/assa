@@ -268,6 +268,9 @@ header {
   #search {
     order: 0;
   }
+  #ul {
+    padding: 5px 0px 0px 0px;
+  }
 }
 main {
   max-width: 1200px;
@@ -489,6 +492,214 @@ main {
   }
   #posts time {
     padding: 0px;
+  }
+}
+#main {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 10px 10px;
+  margin-bottom: 20px;
+  max-width: 1160px;
+}
+
+#content-box {
+  display: flex;
+}
+
+#article {
+  max-width: 700px;
+  width: 100%;
+  margin: 10px;
+}
+#article hr {
+  border: none;
+  height: 5px;
+  background-color: #2C2C2C;
+  width: 100px;
+}
+#article h1 {
+  font-family: "Ubuntu", sans-serif;
+  color: #2C2C2C;
+  font-size: 26px;
+  margin: 12px 0px;
+}
+#article h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: #FFFFFF;
+  padding: 4px 10px;
+  margin: 15px 0px;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  background-image: linear-gradient(to right, #0A6666, transparent);
+}
+#article time {
+  font-family: "Open Sans", sans-serif;
+  color: #4A4A4A;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: block;
+}
+#article p {
+  font-size: 16px;
+  margin: 10px 0px;
+  line-height: 26px;
+  letter-spacing: 0.6px;
+  color: #4A4A4A;
+  font-family: "Open Sans", sans-serif;
+}
+
+#category-path {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 30px 0px;
+}
+#category-path a {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  cursor: pointer;
+}
+#category-path a::after {
+  content: "›";
+  margin-left: 20px;
+  font-weight: 800;
+  font-size: 14px;
+}
+#category-path a:last-child {
+  margin: 0px;
+}
+#category-path a:last-child:after {
+  display: none;
+}
+#category-path ion-icon {
+  font-size: 16px;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+figcaption {
+  text-align: center;
+  padding: 4px 0px 10px 0px;
+  font-family: "Ubuntu", sans-serif;
+  color: #4A4A4A;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+aside {
+  margin: 10px;
+  max-width: 400px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 95px;
+}
+aside h3 {
+  color: #2C2C2C;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-top: 2px solid #2C2C2C;
+  padding-top: 6px;
+  margin-bottom: 30px;
+}
+aside li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+aside li:last-child {
+  margin: 0px;
+}
+aside li strong {
+  border-radius: 50%;
+  border: 4px solid #2C2C2C;
+  padding: 10px 17px;
+  color: #2C2C2C;
+}
+aside li a {
+  color: #4A4A4A;
+  margin-left: 20px;
+  transition: 0.4s;
+}
+aside li a:hover {
+  color: #0A6666;
+}
+
+#share ion-icon {
+  font-size: 30px;
+  color: #0A6666;
+  margin: 10px 10px 10px 0px;
+}
+
+#main > hr {
+  border: none;
+  height: 2px;
+  background-color: #2C2C2C;
+  max-width: 1110px;
+  width: 100%;
+  margin: 15px auto;
+}
+
+#main > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#main > div a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  margin: 0px 10px;
+  transition: 0.4s;
+}
+#main > div a:hover {
+  color: #0A6666;
+}
+
+@media (max-width: 1000px) {
+  #content-box {
+    display: block;
+  }
+  #article {
+    margin: auto;
+  }
+  aside {
+    margin: auto;
+    max-width: 700px;
+  }
+  #main > hr {
+    border: none;
+    height: 2px;
+    background-color: #2C2C2C;
+    max-width: 700px;
+  }
+  #main > div {
+    max-width: 700px;
+    margin: auto;
+  }
+  #main > div a {
+    margin: 0px;
   }
 }
 footer {
