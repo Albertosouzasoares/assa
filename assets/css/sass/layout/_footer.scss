@@ -1,81 +1,63 @@
+/*Footer*/
 footer {
     background-color: $corPrimaria;
     box-shadow: 0px -4px 12px $sombra;
-    padding: 10px 0px 20px 0px;
+    padding: 10px 20px;
 
     p {
         border-top: 2px solid $sombra;
-        padding-top: 20px;
-        text-align: center;
+        padding: 20px 0px 10px 0px;
         max-width: 1200px;
         margin: auto;
-        font-family: $fontOpenSans;
         text-transform: uppercase;
-        color: $corPreto_1;
-        font-size: 16px;
         letter-spacing: 1px;
+        text-align: center;
+        color: $corPreto_1;
         font-weight: 600;
     }
 }
 
 #footer {
+    margin: 0px auto 10px auto;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0px auto 10px auto;
 }
 
 #footer-AstroFantastico {
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    
+
     .logo {
-        border-bottom: 2px solid $sombra;
+        margin-left: 0px;
     }
 }
 
-/*Passe Aqui Depois*/
-#footer-AstroFantastico a {
-    display: inline-flex;
-}
-
+/*Redes Sociais*/
 #social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-top: 2px solid $sombra;
+    padding-top: 10px;
     max-width: 140px;
-    margin: 4px auto;
-
-
-    ion-icon {
-        font-size: 26px;
-        padding: 5px;
-        color: $corVerde;
-        border-radius: 12px;
-        transition: 0.4s;
-
-        &:hover {
-            background-color: $corVerde;
-            color: $corPrimaria;
-        }
-    }
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+/*Sobre e Política*/
 #footer-link {
     .button {
         display: block;
-        border-radius: 6px;
-        padding: 4px 20px;
         box-shadow: 0px 0px  4px 4px $sombra;
+        text-align: center;
         font-weight: 600;
-
-        /*Passe Aqui Tambem*/
-        margin: 0px;
-    }
-
-    .button:last-child {
-        margin-top: 20px;
+        padding: 4px 20px;
+        border-radius: 6px;
+        
+        &:last-child {
+            margin-top: 20px;
+        }
     }
 }

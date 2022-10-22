@@ -1,0 +1,13 @@
+.category {
+    background-color: $corVerde;
+    border-radius: 2px;
+    font: 800 12px $fontOpenSans;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: $corPrimaria;
+    padding: 6px 12px;
+    margin: 15px 0px 0px 15px;
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+}

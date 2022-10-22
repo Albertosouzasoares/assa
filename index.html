@@ -11,201 +11,207 @@
 </head>
 <body>
   
-  <!--Header-->
-  <header>
-    <section id="header">
-      
-      <!--Logo-->
-      <a href="#">
-        <img src="logo.svg" alt="Astro Fantástico" class="logo">
-      </a>
-      
-      <!--Menu-->
-      <nav id="nav">
-        <button id="btn-mobile">
-          <span id="hamburger"></span>
-        </button>
+    <!--Header-->
+    <header>
+        <section id="header">
+            
+            <!--Logo-->
+            <a href="#">
+                <img src="./assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+            </a>
+            
+            <!--Nav-->
+            <nav id="nav">
+
+                <!--Botão do Menu-->
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
+            
+                <!--Menu-->
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                    <li><a href="#">Curso</a></li>
+                    <li><a href="#">Livros</a></li>
+                </ul>
+
+                <!--Busca-->
+                <button id="search">
+                    <img src="./assets/icons/search.svg" alt="Busca" title="Abrir Busca" id="icon-search">
+                    
+                    <img src="./assets/icons/close.svg" alt="Fechar" title="Fechar Busca" id="icon-close">
+                </button>
+
+                <!--Caixa de Busca-->
+                <div id="search-box">
+                    <input class="search-txt" type="search" onkeyup="filter()" placeholder="Faça a sua pesquisa" id="input">
+                    
+                    <ul id="ul">
+                        <li>
+                            <h4>
+                                <a href="#">Nebulosas: Como são formadas as grandes nuvens do espaço?</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="#">Cebulosas: Como são formadas as grandes nuvens do espaço?</a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+  
+    <!--Main-->
+    <main>
         
-        <ul id="menu">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-          <li><a href="#">Link 5</a></li>
-        </ul>
-
-        <button id="search">
-          <ion-icon id="icon-search" name="search-outline"></ion-icon>
-          <ion-icon id="icon-close" name="close-outline"></ion-icon>
-        </button>
-
-        <div id="search-box">
-          <input class="search-txt" type="search" onkeyup="filter()" placeholder="Faça a sua pesquisa" id="input">
-          
-          <ul id="ul">
-            <li>
-                <h4>
-                  <a href="">Nebulosas: Como são formadas as grandes nuvens do espaço?</a>
-                </h4>
-            </li>
-
-            <li>
-              <h4>
-                <a href="">Nebulosas: Como são formadas as grandes nuvens do espaço?</a>
-              </h4>
-            </li>
-          </ul>
-        </div>
-
-      </nav>
-    </section>
-  </header>
-  
-  <!--Main-->
-  <main>
-    
-    <!--Recente-->
-    <article id="recent">
-      <a href="pag.html" id="post-image">
-        <span class="category">Astronomia</span>
-        <img src="img-buraco-negro-sagittarius.jpg" alt="Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
-      </a>
-      <section>
-        <h2>
-          <a href="pag.html">A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</a>
-        </h2>
-        <p>O dia 10 de abril de 2019, foi um momento histórico para a ciência. Porque pela primeira vez, foi possível tira uma foto de um buraco negro.</p>
-        <time>20/10/2022</time>
-        <hr>
-        <a class="button" href="pag.html">Leia mais</a>
-      </section>
-    </article>
-    
-    <!--Posts-->
-    <article id="posts">
-      <section>
-        <a href="p/2022/nebulosas-como-sao-formadas">
-          <img src="p/2022/midias/img-nebulosa-helix.jpg" alt="Nebulosa de Helix"/>
-          <span class="category">Astronomia</span>
-          <div>
-            <time>20/10/2022</time>
-            <h3>Nebulosas: Como são formadas as grandes nuvens do espaço?</h3>
-          </div>
-        </a>
-
-        <a href="p/2022/primeira-imagem-buraco-negro-nossa-galaxia">
-          <img src="p/2022/midias/img-buraco-negro-sagittarius.jpg" alt="primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
-          <span class="category">Astronomia</span>
-          <div>
-            <time>20/10/2022</time>
-            <h3>A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</h3>
-          </div>
-        </a>
-      </section>
-
-      <section>
-        <a href="p/2022/nebulosas-como-sao-formadas">
-          <img src="p/2022/midias/img-nebulosa-helix.jpg" alt="Nebulosa de Helix"/>
-          <span class="category">Astronomia</span>
-          <div>
-            <time>20/10/2022</time>
-            <h3>Nebulosas: Como são formadas as grandes nuvens do espaço?</h3>
-          </div>
-        </a>
-
-        <a href="p/2022/primeira-imagem-buraco-negro-nossa-galaxia">
-          <img src="p/2022/midias/img-buraco-negro-sagittarius.jpg" alt="primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
-          <span class="category">Astronomia</span>
-          <div>
-            <time>20/10/2022</time>
-            <h3>A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</h3>
-          </div>
-        </a>
-      </section>
-
-      <section>
-        <a href="p/2022/nebulosas-como-sao-formadas">
-          <img src="p/2022/midias/img-nebulosa-helix.jpg" alt="Nebulosa de Helix"/>
-          <span class="category">Astronomia</span>
-          <div>
-            <time>20/10/2022</time>
-            <h3>Nebulosas: Como são formadas as grandes nuvens do espaço?</h3>
-          </div>
-        </a>
-
-        <a href="p/2022/primeira-imagem-buraco-negro-nossa-galaxia">
-          <img src="p/2022/midias/img-buraco-negro-sagittarius.jpg" alt="primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
-          <span class="category">Astronomia</span>
-          <div>
-            <time>20/10/2022</time>
-            <h3>A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</h3>
-          </div>
-        </a>
-      </section>
-
-      <section  style="margin: 0px;">
-        <a href="p/2022/nebulosas-como-sao-formadas">
-          <img src="p/2022/midias/img-nebulosa-helix.jpg" alt="Nebulosa de Helix"/>
-          <span class="category">Astronomia</span>
-          <div>
-            <time>20/10/2022</time>
-            <h3>Nebulosas: Como são formadas as grandes nuvens do espaço?</h3>
-          </div>
-        </a>
-
-        <a href="p/2022/primeira-imagem-buraco-negro-nossa-galaxia">
-          <img src="p/2022/midias/img-buraco-negro-sagittarius.jpg" alt="primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
-          <span class="category">Astronomia</span>
-          <div>
-            <time>20/10/2022</time>
-            <h3>A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</h3>
-          </div>
-        </a>
-      </section>
-    </article>
-    
-    <form style="display: none;" method="get" action="mais">
-      <button class="button" type="submit">Carregar mais</button>
-    </form>
-  </main>
-
-  
-  
-  <!--Footer-->
-  <footer>
-    <section id="footer">
-      <div id="footer-AstroFantastico">
-        <div>
-          <a href="#">
-            <img src="logo.svg" alt="Astro Fantástico" class="logo">
-          </a>
-
-          <div id="social">
-            <a href="https://instagram.com" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
+        <!--Recente-->
+        <article id="recent">
+            <a href="pag.html" id="post-image">
+                <span class="category">Astronomia</span>
+                <img src="img-buraco-negro-sagittarius.jpg" alt="Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
             </a>
-            <a href="https://youtube.com" target="_blank">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-            <a href="https://facebook.com" target="_blank">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </div>
-        </div>
-      </div>
+            <section>
+                <h2>
+                    <a href="pag.html">A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</a>
+                </h2>
+                <p>O dia 10 de abril de 2019, foi um momento histórico para a ciência. Porque pela primeira vez, foi possível tira uma foto de um buraco negro.</p>
+                <time>20/10/2022</time>
+                <hr>
+                <a class="button" href="pag.html">Leia mais</a>
+            </section>
+        </article>
+        
+        <!--Posts-->
+        <article id="posts">
+            <section>
+                <a href="p/2022/nebulosas-como-sao-formadas">
+                    <img src="./img-buraco-negro-sagittarius.jpg" alt="Nebulosa de Helix"/>
+                    <span class="category">Astronomia</span>
+                    <div>
+                        <time>20/10/2022</time>
+                        <h3>Nebulosas: Como são formadas as grandes nuvens do espaço?</h3>
+                    </div>
+                </a>
 
-      <div id="footer-link">
-        <a href="#" class="button">Link 1</a>
-        <a href="#" class="button">Link 2</a>
-      </div>
-    </section>
-    <p>&copy; Astro Fantastico - 2022</p>
-  </footer>
+                <a href="p/2022/primeira-imagem-buraco-negro-nossa-galaxia">
+                    <img src="./img-buraco-negro-sagittarius.jpg" alt="primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+                    <span class="category">Astronomia</span>
+                    <div>
+                        <time>20/10/2022</time>
+                        <h3>A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</h3>
+                    </div>
+                </a>
+            </section>
+
+            <section>
+                <a href="p/2022/nebulosas-como-sao-formadas">
+                    <img src="./img-buraco-negro-sagittarius.jpg" alt="Nebulosa de Helix"/>
+                    <span class="category">Astronomia</span>
+                    <div>
+                        <time>20/10/2022</time>
+                        <h3>Nebulosas: Como são formadas as grandes nuvens do espaço?</h3>
+                    </div>
+                </a>
+
+                <a href="p/2022/primeira-imagem-buraco-negro-nossa-galaxia">
+                    <img src="./img-buraco-negro-sagittarius.jpg" alt="primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+                    <span class="category">Astronomia</span>
+                    <div>
+                        <time>20/10/2022</time>
+                        <h3>A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</h3>
+                    </div>
+                </a>
+            </section>
+
+            <section>
+                <a href="p/2022/nebulosas-como-sao-formadas">
+                    <img src="./img-buraco-negro-sagittarius.jpg" alt="Nebulosa de Helix"/>
+                    <span class="category">Astronomia</span>
+                    <div>
+                        <time>20/10/2022</time>
+                        <h3>Nebulosas: Como são formadas as grandes nuvens do espaço?</h3>
+                    </div>
+                </a>
+
+                <a href="p/2022/primeira-imagem-buraco-negro-nossa-galaxia">
+                    <img src="./img-buraco-negro-sagittarius.jpg" alt="primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+                    <span class="category">Astronomia</span>
+                    <div>
+                        <time>20/10/2022</time>
+                        <h3>A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</h3>
+                    </div>
+                </a>
+            </section>
+
+            <section>
+                <a href="p/2022/nebulosas-como-sao-formadas">
+                    <img src="./img-buraco-negro-sagittarius.jpg" alt="Nebulosa de Helix"/>
+                    <span class="category">Astronomia</span>
+                    <div>
+                        <time>20/10/2022</time>
+                        <h3>Nebulosas: Como são formadas as grandes nuvens do espaço?</h3>
+                    </div>
+                </a>
+
+                <a href="p/2022/primeira-imagem-buraco-negro-nossa-galaxia">
+                    <img src="./img-buraco-negro-sagittarius.jpg" alt="primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+                    <span class="category">Astronomia</span>
+                    <div>
+                        <time>20/10/2022</time>
+                        <h3>A primeira imagem do buraco negro no centro da nossa galáxia divulgada por astrônomos</h3>
+                    </div>
+                </a>
+            </section>
+        </article>
+        
+        <form style="display: none;" method="get" action="mais">
+            <button class="button" type="submit">Carregar mais</button>
+        </form>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <section id="footer">
+            <div id="footer-AstroFantastico">
+                <div>
+
+                    <!--Logo-->
+                    <img src="./assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+
+                    <!--Redes Sociais-->
+                    <div id="social">
+                        <a href="https://instagram.com" target="_blank" title="Instagrma">
+                            <img src="./assets/icons/instagram.svg" alt="Instagram">
+                        </a>
+
+                        <a href="https://youtube.com" target="_blank" title="YouTube">
+                            <img src="./assets/icons/youtube.svg" alt="YouTube">
+                        </a>
+
+                        <a href="https://facebook.com" target="_blank" title="Facebook">
+                            <img src="./assets/icons/logo-facebook.svg" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sobre e Política-->
+            <div id="footer-link">
+                <a href="#" class="button">Sobre</a>
+                <a href="#" class="button">Política</a>
+            </div>
+        </section>
+
+        <!--Copyright Astro Fantástico-->
+        <p>&copy; Astro Fantástico - 2022</p>
+    </footer>
   
-  <!--Script-->
-  
-  <script src="arquivos/js/script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--JS-->
+    <script src="arquivos/js/script.js"></script> 
 </body>
 </html>

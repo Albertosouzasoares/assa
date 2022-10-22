@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,800;1,500;1,800&family=Ubuntu:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 
+@import './_variables';
+
 /*Seletor Universal*/
 * {
     padding: 0px;
@@ -8,26 +10,53 @@
 }
 
 body {
-    background-color: #F0F0F0;
+    background-color: $corBranco;
 }
 
-/*Listas Não Ordenadas e Ordenadas*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fontUbuntu;
+    color: $corPreto_1;
+}
+
+p {
+    font: 16px/26px $fontOpenSans;
+    letter-spacing: 0.6px;
+    color: $corPreto_2;
+}
+
 ul, ol {
     list-style: none;
 }
 
-/*Link*/
 a {
     text-decoration: none;
+    display: inline-flex;
+}
+
+a, strong {
+    font: 600 16px $fontOpenSans;
+    letter-spacing: 0.6px;
+    color: $corVerde;
 }
 
 img {
     object-fit: cover;
+    width: 100%;
 }
 
-/*Botão*/
 button {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+hr {
+    background-color: $corPreto_1;
+    border: none;
+}
+
+time {
+    display: block;
+    font: 400 14px $fontOpenSans;
+    color: $corPreto_2;
 }

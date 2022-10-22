@@ -1,0 +1,82 @@
+@media (max-width: 800px) {
+
+    /*Recente*/
+    #recent {
+        display: block;
+
+        section {
+            padding: 15px 0px 0px 0px;
+
+            a.button {
+                margin-top: 10px;
+            }
+        }
+
+        hr {
+            display: none;
+        }
+    }
+
+    /*Imagem do Post*/
+    #post-image {
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    /*Posts*/
+    #posts {
+        section {
+            display: block;
+        }
+
+        a {
+            max-width: 100%;
+
+            &:first-child {
+                margin: 0px 0px 15px 0px;
+            }
+        }
+
+        div {
+            padding: 15px;
+        }
+        
+        .category {
+            margin: 20px 0px 0px 20px;
+        }
+    }
+
+    /*Footer*/
+    footer p {
+        font-size: 14px;
+    }
+
+    #footer {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #footer-AstroFantastico {
+        margin: 0px
+    }
+    
+    /*Redes Sociais*/
+    #social {
+        padding: 0px;
+        border-top: none;
+        border-bottom: 2px solid $sombra;
+        padding-bottom: 10px;
+    }
+
+    /*Sobre e Política*/
+    #footer-link {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        .button:last-child {
+            margin: 0px 0px 0px 30px;
+        }
+    }
+}

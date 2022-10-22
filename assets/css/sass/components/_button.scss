@@ -1,12 +1,9 @@
 .button {
-    font-family: $fontOpenSans;
-    text-transform: uppercase;
-    color: $corVerde;
-    border-radius: 15px;
     box-shadow: 0px 0px  6px 2px $sombra;
-    font-size: 16px;
-    font-weight: 500;
+    border-radius: 15px;
     padding: 4px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
     transition: 0.4s;
 
     &:hover {
