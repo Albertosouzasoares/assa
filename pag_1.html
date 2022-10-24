@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Astro Fantástico</title>
+  
+  <style>
+    #section {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -12.5px;
+    }
+    
+    .article {
+      flex: 1 1 370px;
+      background-color: #FFFFFF;
+      padding: 10px;
+      margin: 0px 12.5px 20px 0px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+    <!--Header-->
+    <header>
+        <section id="header">
+            
+            <!--Logo-->
+            <a href="#">
+                <img src="./assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+            </a>
+            
+            <!--Nav-->
+            <nav id="nav">
+
+                <!--Botão do Menu-->
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
+            
+                <!--Menu-->
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                    <li><a href="#">Curso</a></li>
+                    <li><a href="#">Livros</a></li>
+                </ul>
+
+                <!--Busca-->
+                <button id="search">
+                    <img src="./assets/icons/search.svg" alt="Busca" title="Abrir Busca" id="icon-search">
+                    
+                    <img src="./assets/icons/close.svg" alt="Fechar" title="Fechar Busca" id="icon-close">
+                </button>
+
+                <!--Caixa de Busca-->
+                <div id="search-box">
+                    <input class="search-txt" type="search" onkeyup="filter()" placeholder="Faça a sua pesquisa" id="input">
+                    
+                    <ul id="ul">
+                        <li>
+                            <h4>
+                                <a href="#">Nebulosas: Como são formadas as grandes nuvens do espaço?</a>
+                            </h4>
+                        </li>
+
+                        <li>
+                            <h4>
+                                <a href="#">Cebulosas: Como são formadas as grandes nuvens do espaço?</a>
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+  
+    <!--Main-->
+    <main>
+      <section id="section">
+        <article class="article">
+          <a href="pag.html" class="post-image">
+                <span class="category">Astronomia</span>
+                <img src="img-buraco-negro-sagittarius.jpg" alt="Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+            </a>
+            <h2><a href="#">Olá, Mundo!</a></h2>
+            <p>jfkwifbuek wudueud7he ue7fjheheud  ey3v7eh eyeube eueubrhe eue eu3bebehheje ueue eb</p>
+            <time>10/10/2022</time>
+            <a class="button" href="pag.html">Leia mais</a>
+        </article>
+        
+        <article class="article">
+          <a href="pag.html" class="post-image">
+                <span class="category">Astronomia</span>
+                <img src="img-buraco-negro-sagittarius.jpg" alt="Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+            </a>
+        </article>
+
+        <article class="article">
+          <a href="pag.html" class="post-image">
+                <span class="category">Astronomia</span>
+                <img src="img-buraco-negro-sagittarius.jpg" alt="Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+            </a>
+        </article>
+
+        <article class="article">
+          <a href="pag.html" class="post-image">
+                <span class="category">Astronomia</span>
+                <img src="img-buraco-negro-sagittarius.jpg" alt="Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+            </a>
+        </article>
+
+        <article class="article">
+          <a href="pag.html" class="post-image">
+                <span class="category">Astronomia</span>
+                <img src="img-buraco-negro-sagittarius.jpg" alt="Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+            </a>
+        </article>
+
+        <article class="article">
+          <a href="pag.html" class="post-image">
+                <span class="category">Astronomia</span>
+                <img src="img-buraco-negro-sagittarius.jpg" alt="Primeira imagem do buraco negro Sagittarius A* que está no centro da nossa galáxia"/>
+            </a>
+        </article>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <section id="footer">
+            <div id="footer-AstroFantastico">
+                <div>
+
+                    <!--Logo-->
+                    <img src="./assets/icons/logo/logo.svg" alt="Astro Fantástico" class="logo">
+
+                    <!--Redes Sociais-->
+                    <div id="social">
+                        <a href="https://instagram.com" target="_blank" title="Instagrma">
+                            <img src="./assets/icons/instagram.svg" alt="Instagram">
+                        </a>
+
+                        <a href="https://youtube.com" target="_blank" title="YouTube">
+                            <img src="./assets/icons/youtube.svg" alt="YouTube">
+                        </a>
+
+                        <a href="https://facebook.com" target="_blank" title="Facebook">
+                            <img src="./assets/icons/logo-facebook.svg" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sobre e Política-->
+            <div id="footer-link">
+                <a href="#" class="button">Sobre</a>
+                <a href="#" class="button">Política</a>
+            </div>
+        </section>
+
+        <!--Copyright Astro Fantástico-->
+        <p>&copy; Astro Fantástico - 2022</p>
+    </footer>
+  
+    <!--JS-->
+    <script src="arquivos/js/script.js"></script> 
+</body>
+</html>
